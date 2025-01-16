@@ -6,26 +6,56 @@ description: >-
   better the instructions the better the code!
 date: '2024-09-05'
 ---
+## How AI coding works?
 
-If you're using **Next.js** and **Netlify**, you’re tapping into a powerhouse combination for fast, reliable, and scalable web applications. 
+To create detailed instructions we use AI to write us detailed project development documentation.
+This step is very important and can't be skipped if you want to build production-ready application.
 
-**This is an example post. There's another one [here](/posts/example-post-1).**
+## 1. Write detailed Project Documentation about your application.
 
-Here’s why they work so well together:
+> Documents include:
+>
+> > PRD/ App Flow Doc/ Tech STack Doc/ Frontent Guidelines/ Backend Structure Doc
+> > and any other docs you might find useful.
 
-1. **Seamless Deployment**: With Netlify’s Git-based deployment, pushing updates to a Next.js site is automatic and effortless. Every change pushed to GitHub or GitLab triggers a fresh build and deploys your site without any manual effort, perfect for fast-paced projects.
+## 2. AI Chat
 
-2. **Static and Dynamic Content Flexibility**: Next.js shines by allowing both static generation (SSG) and server-side rendering (SSR), and Netlify makes deploying either easy. Static content is globally cached on Netlify’s CDN, making your site lightning-fast, while Netlify Functions handle any server-side needs with zero configuration.
+> You'll notice 2 features with same layout: AI Chat/ Composer
+>
+> > AI chat gives you more control. It won't implement anything autonomously
+> > Use AI chat to understand code, errors and ask for step by step fixes
 
-3. **Serverless Functions**: Netlify’s serverless functions work beautifully with Next.js API routes, enabling dynamic features (like forms, authentication, and data fetching) without additional servers. This lets you build interactive, backend-supported sites with just front-end code.
+## 3.Cursor AI Composer
 
-4. **Edge Caching and CDNs**: Next.js’s pages are distributed across Netlify’s global CDN, ensuring that your users get a fast experience no matter where they are. This setup optimizes load times and enhances site performance.
+> This is the main feature of Cursor. This is where Cursor uses AI to write code and implement code.
+>
+> > It has 2 options:normal/ agent
+> > Normal composer is the old composer where terminal is not integrated in chat. With agent update now it can reason, implement, iterate and fix errors.
+> > Agent is getting better and better and that's what most AI devs use on daily basis.
 
-5. **Developer-Friendly Workflow**: Both Next.js and Netlify focus on a developer-friendly experience. Local development, previews, and rollbacks are simple, so you can focus on building a better user experience without worrying about the infrastructure.
+## 4.Rules For AI
 
-For anyone building with Next.js, deploying on Netlify means you get the best of **speed, reliability, and ease**—all the ingredients needed to create high-performing, user-friendly web apps!
+> Go to Settings → General → Rules For AI
+>
+> > You need to add a Role for AI + tech stack + guidelines + limitations. These boundaries will enhance the code quality and you'll get less errors.
+> > Notre: Rules for AI and .cursorrules file are 2 different files.
+
+## 5. cursorrules file
+
+> Rules for AI is like a personality of our your AI coding model. And .cursorrules file is project specific instructions. It's like a map of your project.
+> You need to add:
+>
+> > *   what file structure you want?
+> > *   which file will go in which folder?
+> > *   project specific guidelines and instructions.
+> >     CodeGuide can also write .cursorrules file.
+
+## 6.Docs:
+
+> This is where you can attach web links of any official docs you might be using in the project like API Docs, NextJS docs, Shadcn Docs. (this doesn't work all the time but still beneficial)
+> For anyone building with Next.js, deploying on Netlify means you get the best of **speed, reliability, and ease**—all the ingredients needed to create high-performing, user-friendly web apps!
 
 ## Additional resources
 
-- [Next.js on Netlify](https://docs.netlify.com/frameworks/next-js/overview/)
-- [Use Visual Editor with Next.js](https://docs.netlify.com/visual-editor/frameworks/next/)
+*   [Next.js on Netlify](https://docs.netlify.com/frameworks/next-js/overview/)
+*   [Use Visual Editor with Next.js](https://docs.netlify.com/visual-editor/frameworks/next/)
