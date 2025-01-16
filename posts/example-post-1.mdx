@@ -1,83 +1,120 @@
 ---
-type: Post
-title: Cursor Prompting HandBook
-description: ''
+type: blog
+title: Cursor AI Coding Crash Course
+description: >-
+  built  projects with AI code. 
+
 date: '2025-01-06'
 ---
-You have an Idea to turn into Software?
-Use CodeGuide to turn that idea into proper developments documentation for AI coding models.
-AI Coding = Detailed Context + Clear Prompting.
-Build web apps, mobile apps, landing pages, extentions..
+And I found that Cursor is the best AI Coding IDE for complex applications like:
+- Web applications
+- Mobile Applications
+- Downloadable Software
+So If you master Cursor, you can code anything!
 
-# h1 Heading
 
-## h2 Heading
+##  Ideation/Inspiration
 
-### h3 Heading
+Start with mapping out your idea. This is a very important step. 
 
-#### h4 Heading
+You need to visualize the screens, features, layout in your head.
 
-##### h5 Heading
-
-###### h6 Heading
-
-## Horizontal Rules
-
+You can draw on paper or go to dribbble or behance for UI design inspirations.
+![coding map](/public/images/c01.jpg "Image corsur")
 ***
 
-## Emphasis
+## Documentation
 
-**This is bold text**
+You already know, AI coding is done by AI models like Claude Sonnet 3.5 or GPT4o. 
 
-**This is bold text**
+These models require detailed context about the project you want to develop. 
+![Documentation](/public/images/docm.jpg "Image corsur")
+For this purpose we need to write "Project Development Documentation"
+> ### Cursorrules file & Rules for AI
+> > Cursor scans Rules for AI and .cursorrules file the first so we need to fill up these first. 
+> > Rules for AI: This is general settings about your coding workflow. (for every project this can stay the same if you use same tach stack)
+> > .cursorrules file: This is project specific instructions file. Take inspirations from cursor .directory site.
 
-*This is italic text*
+> ### Project Requirements Document (PRD)
+> > This is the most important document for for AI coding project.
+> > This doc provides the summary of all aspects of the project like:
+> > *  Introduction
+> > *  App flow
+> > *  Core features
+> > *  Tech Stack
+> > * In scope vs out of scope
+> > Basically its your project map that you can provide to AI coding models
+![Project Requirements](/public/images/proj.jpg "Image corsur")
 
-*This is italic text*
+> ### App Flow Document
+> > This Document should provide end to end rundown to AI model.
+> > "User start its journey from landing page then clicks on sign up button and sign up with Google and then land on dashboard. Dashboard has............ sections."
+> > This will help AI model to map out connection between pages and process all features and limitations.
+![App Flow Document](/public/images/appf.jpg "Image corsur")
 
-~~Strikethrough~~
+> ### Tech Stack Document
+> > This document should provide all technical details about the project like:
+> > * Frontend Tech Stack
+> > * Backend Tech Stack
+> > * API iIntegrations
+> > * Deployment Instructions
+> > This doc will enable AI model to understand what packages and dependencies to install.
 
-## Blockquotes
+![Tech Stack Document](/public/images/teck.jpg "Image corsur")
 
-> Blockquotes can also be nested...
->
-> > ...by using additional greater-than signs right next to each other...
-> >
-> > > ...or with spaces between arrows.
+> ### Frontend Guidelines
 
-## Lists
+> > This Document should provide all details about how you want your project to look like - visually:
+> >  Deisgn Principles/ Styling Instructions/ Page Layout
+> >  Navigation/ Color Pallates/ Fonts
+> > This is a skin of of your project. The better it is explained the prettier your app will look.
+![Frontend Guidelines](/public/images/front.jpg "Image corsur")
 
-Unordered
+> ### Backend Structure
 
-*   Lorem ipsum dolor sit amet
-*   Consectetur adipiscing elit
-*   Integer molestie lorem at massa
+> > This Document will explain to AI model about:
+> >  Backend Tech/ User Authentication/ Database Architecture
+> >  Storage buckets/ API Endpoints/ Security measures/ Hosting Solutions
+> > This is the main brain of your project. Your app will fetch and display data from your backend.
+![Backend Structure](/public/images/back.jpg "Image corsur")
 
-Ordered
+> ### Project Status Document
 
-1.  Lorem ipsum dolor sit amet
-2.  Consectetur adipiscing elit
-3.  Integer molestie lorem at massa
+> > This is my own hack. This doc functions as a work log for AI model. 
+> > It should record what steps it already completed, what step it is working on, what's left. 
+> > This will help you open up your project anytime and AI will pick up from where it left.
+> > I ask AI to update this document after every major feature completion. 
+> > You just need to add this as an instruction in your .cursorrules file.
+> > I also record errors, (how AI resolved that error? record that so I can reference it for future use for similar errors)
+![Project Status Documen](/public/images/prosd.jpg "Image corsur")
 
-## Code
+## Tips and Tricks:
 
-Inline `code`
+1. Use o1 pro model to get your Documentation done. It is expensive but the quality of docs is amazing
+  But you don't need to pay $200/moth just for this.
 
-Block code
+2. Build step by step. 
+  If you ask AI to build a complete application in 1 prompt. That's not possible and it will mess up the project. 
+So start page by page, section py section. 
 
-```
-npm install netlify-cli -g
-```
+3. There will be errors (Instruct better to resolve them)
+  I copy and paste the error in composer and say "use chain of thought reasoning to find the core cause" 
 
-Syntax highlighting
+4. Use *Agent in the composer. 
+  This is the new update which enabled Cursor to use terminal within the composer so it can install packages itself. 
 
-```js
-var foo = function (bar) {
-  return bar++;
-};
+5. Use latest Sonnet 3.5 model (by default it Cursor runs on old Sonnet)
 
-console.log(foo(5));
-```
+  You can enable that by going to settings then models and select Sonnet model on top.
+I hope This Guide Helped you understand the AI Coding Workflow.
+Project Development Documentation is very important and it's the 70% work in AI code. 
+Rest is just making sure AI follows the instructions properly.
+Use CodeGuide to save 7+ hours on Docs and 4.5M tokens/project.
+![tips](/public/images/tips.jpg "Image corsur")
+
+
+
+
 
 ## Tables
 
